@@ -6,9 +6,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: paleturquoise;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+ul li {
+  list-style: none;
+  padding: 20px;
+  border: 1px solid #efefef;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  display: inline-flex;
+  background: white;
+}
+
+.todoItem {
+  padding: 20px 10px;
+  background-color: #efefef;
+}
+.todoItem:nth-of-type(2n) {
+  background: lightblue;
+}
+:first-of-type(.todoItem) {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }

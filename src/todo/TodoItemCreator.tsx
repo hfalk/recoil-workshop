@@ -1,4 +1,4 @@
-import { ChangeEventHandler, useState } from "react"
+import { ChangeEventHandler, FormEventHandler, useState } from "react"
 import { useSetRecoilState } from "recoil"
 import { todoListState } from "./TodoList"
 
@@ -6,7 +6,7 @@ export function TodoItemCreator() {
   const [inputValue, setInputValue] = useState("")
   const setTodoList = useSetRecoilState(todoListState)
 
-  const addItem = () => {
+  const addItem: FormEventHandler<HTMLFormElement> = (e) => {
     setTodoList((oldTodoList) => [
       ...oldTodoList,
       {
@@ -16,6 +16,7 @@ export function TodoItemCreator() {
       },
     ])
     setInputValue("")
+    e.preventDefault()
   }
 
   const onChange: ChangeEventHandler<HTMLInputElement> = ({
@@ -26,8 +27,10 @@ export function TodoItemCreator() {
 
   return (
     <div>
-      <input type="text" value={inputValue} onChange={onChange} />
-      <button onClick={addItem}>Add</button>
+      <form onSubmit={addItem}>
+        <input type="text" value={inputValue} onChange={onChange} />
+        <button type="submit">Add</button>
+      </form>
     </div>
   )
 }

@@ -43,7 +43,7 @@ export function TodoItem({ item }: Props) {
   }
 
   return (
-    <div>
+    <div className="todoItem">
       <input type="text" value={item.text} onChange={editItemText} />
       <input
         type="checkbox"
