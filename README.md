@@ -31,4 +31,4 @@ Formål:
 TODO:
 
 - Gå inn i `oppgave2/Oppgave2.tsx` og følg TODOs
-- Eksempel fra [recoil sin dokumentasjon](https://recoiljs.org/docs/basic-tutorial/selectors) eller todo mappen, hvis du sitter fast
+- Eksempel fra [recoil sin dokumentasjon](https://recoiljs.org/docs/basic-tutorial/selectors) eller `todo/TodoListFilters.tsx`, hvis du sitter fast
