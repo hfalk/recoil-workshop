@@ -15,6 +15,7 @@ export function TodoList() {
 
   return (
     <>
+      <h1>Todo list</h1>
       <TodoListStats />
       <TodoListFilters />
       <TodoItemCreator />
