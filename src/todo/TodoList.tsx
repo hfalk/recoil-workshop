@@ -10,14 +10,14 @@ export const todoListState = atom<TodoItemType[]>({
 })
 
 export function TodoList() {
-  //const todoList = useRecoilValue(todoListState)
-  const todoList = useRecoilValue(filteredTodoListState)
+  const todoList = useRecoilValue(todoListState)
+  //const todoList = useRecoilValue(filteredTodoListState)
 
   return (
     <>
       <h1>Todo list</h1>
-      <TodoListStats />
-      <TodoListFilters />
+      {/* <TodoListStats />
+      <TodoListFilters /> */}
       <TodoItemCreator />
 
       {todoList.map((todoItem) => (

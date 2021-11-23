@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export function IntroUtenRecoil() {
+export function UtenRecoil() {
   const [text, setText] = useState("")
 
   return (

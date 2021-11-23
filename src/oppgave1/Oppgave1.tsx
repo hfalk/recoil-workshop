@@ -2,7 +2,7 @@ import { useState } from "react"
 
 // TODO: lag et atom her som hodler en tekstverdi
 
-export function IntroOppgave() {
+export function Oppgave1() {
   return (
     <div className="box">
       <h2>Delt med recoil</h2>
